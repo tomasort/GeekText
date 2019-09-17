@@ -1,0 +1,46 @@
+{
+  "name": "geektext",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http//server-name/MyApp",
+  "dependencies": {
+    "ajv": "^6.5.5",
+    "bootstrap": "^4.3.1",
+    "config": "^2.0.1",
+    "jquery": "^3.3.1",
+    "js-cookie": "^2.2.0",
+    "lodash": "^4.17.13",
+    "nmp": "^1.0.3",
+    "npm": "^6.4.1",
+    "popper": "^1.0.1",
+    "popper.js": "^1.14.4",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-bootstrap": "^0.32.4",
+    "react-cookie": "^3.0.4",
+    "react-dom": "^16.6.3",
+    "react-js-pagination": "^3.0.2",
+    "react-redux": "^5.1.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "react-show-more": "^2.0.0",
+    "react-sidenav": "^3.1.3",
+    "react-star-rating-component": "^1.4.1",
+    "react-star-ratings": "^2.3.0",
+    "react-stars": "^2.2.5",
+    "react-sticky": "^6.0.3",
+    "react-textfit": "^1.1.0",
+    "redux": "^4.0.1",
+    "styled-components": "^4.1.1"
+  },
+  "scripts": {
+    "start": "HOST=geek.localhost.com react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "ws": "3.3.2"
+  }
+}
