@@ -1,53 +1,24 @@
-# ui
-<<<<<<< HEAD
+# GeekText Frontend Application README
 
-=======
->>>>>>> 0678cab6d5b50bc110bbb43fc54fd4eef1d371a8
-To use cookies you need to change the domain of the page because browsers don't usually store cookies from a locally hosted server. To trick the browser we need to add two dots to the domain as in ```geek.localhost.com```
-To do this, we must change the file ```etc/hosts``` I used vim to do it.
-```$ sudo vim //etc/hosts```
+## Introduction
+Welcome to the frontend section of the GeekText bookshop web application. This guide will help you set up and run the frontend part of our application.
 
-In the file you need to add
-```
-127.0.0.1 geek.localhost.com
-```
-Then you need to set the envrionment variable HOST equal to the domain that we specified. Go to the ui folder and find the file package.json
+## Technology Stack
+- **React**: Used for building the user interface.
+- **Bootstrap**: For styling and responsive design.
 
-Then go to the line containing "start": "react-scripts start", and add HOST=geek.localhost.com
-```
-{
-  "name": "geektext",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "bootstrap": "^4.1.3",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-scripts": "1.1.5"
-  },
-  "scripts": {
-    "start": "HOST=geek.localhost.com react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
-}
-```
+## Setup and Installation
+1. **Clone the Repository**: Start by cloning the repo to your local machine.
+2. **Install Dependencies**: Navigate to the frontend directory and run `npm install` to install all the necessary dependencies.
 
-<<<<<<< HEAD
-=======
-```
-npm install --save lodash
-```
->>>>>>> 0678cab6d5b50bc110bbb43fc54fd4eef1d371a8
+## Configuration for Local Development
+- **Local Domain Setup**: To handle cookies in a local environment, you'll need to set up a local domain. Add `127.0.0.1 geek.localhost.com` to your `etc/hosts` file.
+- **Environment Variable**: In `package.json`, under the "scripts" section, set the `HOST` environment variable as `"start": "HOST=geek.localhost.com react-scripts start"`.
 
-Sources:
+## Running the Application
+- **Starting the App**: Use the command `npm start` to run the application. It will launch the app on the `geek.localhost.com` domain.
 
-https://github.com/facebook/create-react-app/issues/2954
-https://stackoverflow.com/questions/1134290/cookies-on-localhost-with-explicit-domain
-https://stackoverflow.com/questions/489369/can-i-use-localhost-as-the-domain-when-setting-an-http-cookie/489396
-<<<<<<< HEAD
-=======
+## Further Help and Documentation
+- For more information, refer to the React documentation and the specific sources listed in the repository for handling cookies and domain settings.
 
-
->>>>>>> 0678cab6d5b50bc110bbb43fc54fd4eef1d371a8
+This README aims to streamline your setup process and provide clear instructions for running the GeekText frontend application effectively.
